@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body {
+    width: 75%;
+    margin: 0 auto;
+    margin: 5px auto;
+    min-width: 310px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+    border: 2px grey solid;
+    border-radius: 10px;
+    padding: 0.2em 0.1em;
+    /* width: 40%; */
+
+}
+
+ul {
+    font-family: 'Signika', sans-serif;
+}
+
+.recipe-card-front>img {
+    width: 70%;
+    border-radius: 1em;
+    flex-shrink: 5;
+    border: 0.15em solid black;
+
+}
+
+.allrecipes {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.recipe-card {
+    text-align: center;
+    width: calc(100%/2);
+    /* display: block; */
+
+}
+
+.recipe-card-inner {
+    position: relative;
+    /* width: 100%; */
+    /* height: 100%; */
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card:hover .recipe-card-inner {
+    transform: rotateY(180deg);
+}
+
+.recipe-card-front,
+.recipe-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.recipe-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+
+
+.recipe-card-back {
+    background-color: #2980b9;
+    color: blue;
+    transform: rotateY(180deg);
+}
+
+@media(max-width:500px) {
+    .allrecipes {
+        flex-direction: column;
+        align-items: center;
+        height: calc(150px * 2);
+
+    }
+
+    .recipe-card {
+        height: calc(100%/2);
+    }
+}

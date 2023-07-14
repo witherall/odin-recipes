@@ -5,14 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
+    <link rel="stylesheet" href="recipes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <h1>Odin Recipes</h1>
-    <ul>
-        <li><a href="recipes/lasagne.html">Lasagne</a></li>
-        <li><a href="recipes/spaghettimeatballs.html">Spaghetti Meatballs</a></li>
-    </ul>
+    <div>
+        <ul>
+            <div class="allrecipes">
+
+                <div class="recipe-card">
+                    <li><a href="recipes/lasagne.html">Lasagne</a></li>
+                    <div class="recipe-card-inner">
+                        <div class="recipe-card-front">
+                            <img src="recipes/Lasagne.jpg" alt="Preview of the Lasagne">
+                        </div>
+                        <div class="recipe-card-back">
+                            <h2>Difficulty</h2>
+                            <p>&#9733; &#9733; &#9734; &#9734; &#9734;</p>
+                        </div>
+                    </div>
+
+                </div>
+                <section class="recipe-card">
+                    <li><a href="recipes/spaghettimeatballs.html">Spaghetti Meatballs</a></li>
+                    <div class="recipe-card-inner">
+
+                        <div class="recipe-card-front">
+                            <img src="recipes/SpaghettiMeatballs.png" alt="Preview of the Spaghetti">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </ul>
+    </div>
 
 
 
